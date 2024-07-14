@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "iranSans";
+  src: url("https://asset.hamrah.academy/filebrowser/api/public/dl/rduX5NiG/font/IRANSansXV.woff2")
+      format("woff-variations"),
+    url("https://asset.hamrah.academy/filebrowser/api/public/dl/rduX5NiG/font/IRANSansXV.woff2")
+      format("woff2");
+  font-weight: 100 900;
+  font-display: fallback;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,6 +34,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  font-family: "iranSans", sans-serif !important;
+  font-variation-settings: "dots" 8;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
 }
 
 @layer utilities {
